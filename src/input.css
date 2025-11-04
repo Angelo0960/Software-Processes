@@ -1,7 +1,23 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "libertinus";
+  src: url(./assets/fonts/LibertinusSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "playwrite";
+  src: url(./assets/fonts/PlaywriteES-Regular.ttf);
+}
 
 
+@theme{
+  --font-libertinus: 'Libertinus';
+  --font-playwrite: 'playwrite';
+}
+
+.libertinus{
+  font-family: var(--font-playwrite);
+}
 .primary-color {
   @apply bg-blue-800;
 }
