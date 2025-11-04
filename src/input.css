@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "libertinus";
+  src: url(./assets/fonts/LibertinusSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "playwrite";
+  src: url(./assets/fonts/PlaywriteES-Regular.ttf);
+}
 
+
+@theme{
+  --font-libertinus: 'Libertinus';
+  --font-playwrite: 'playwrite';
+}
+
+.libertinus{
+  font-family: var(--font-playwrite);
+}
 .primary-color {
   @apply bg-blue-800;
 }
@@ -22,6 +39,15 @@
 }
 
 
+.tr{
+  @apply bg-white dark:bg-white border border-blue-200
+}
+.th{
+  @apply px-3 py-2 sm:px-6 sm:py-4 font-medium text-black md:whitespace-nowrap lg:whitespace-nowrap border-r border-r-blue-200 sm:text-sm lg:text-3xl break-words
+}
+.td{
+  @apply px-3 py-2 sm:px-6 sm:py-4 text-black sm:text-sm lg:text-2xl
+}
 
 .img-container {
   @apply relative w-full h-64 bg-gray-200 overflow-hidden;
