@@ -48,3 +48,13 @@
 .td{
   @apply px-3 py-2 sm:px-6 sm:py-4 text-black sm:text-sm lg:text-2xl
 }
+
+.img-container {
+  @apply relative w-full h-64 bg-gray-200 overflow-hidden;
+}
+
+
+.Cope_img{
+  @apply w-full max-w-5xl h-auto rounded-xl shadow-lg mx-auto
+}
+
