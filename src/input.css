@@ -26,3 +26,9 @@
 .img-container {
   @apply relative w-full h-64 bg-gray-200 overflow-hidden;
 }
+
+
+.Cope_img{
+  @apply w-full max-w-5xl h-auto rounded-xl shadow-lg mx-auto
+}
+

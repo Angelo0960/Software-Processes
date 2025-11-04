@@ -10,47 +10,69 @@
 <body class="bg-gradient-to-br from-blue-50 via-white to-blue-100">
 
   <!-- Header / Navbar -->
-  <header class="bg-blue-800 text-white shadow-lg fixed w-full top-0 z-50 backdrop-blur-sm">
-    <nav class="container mx-auto px-6 lg:px-12">
-      <div class="flex justify-between items-center h-16 lg:h-20">
-
-        <!-- Logo -->
-        <div class="flex items-center space-x-3">
-          <div class="w-10 h-10 bg-blue-200 rounded-lg flex items-center justify-center shadow-md">
-            <span class="text-blue-800 font-bold text-base">SP</span>
-          </div>
-          <h1 class="font-bold text-white text-2xl lg:text-3xl">Software Processes</h1>
+     <header
+  class="bg-blue-800 text-white shadow-xl fixed w-full top-0 z-50 backdrop-blur-sm transition-all duration-500"
+>
+  <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16 lg:h-20">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3 min-w-0">
+        <div
+          class="w-8 h-8 sm:w-10 sm:h-10 bg-blue-200 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md"
+        >
+          <span class="text-blue-800 font-bold text-sm sm:text-base">SP</span>
         </div>
-
-        <!-- Desktop Navigation -->
-        <div class="hidden lg:flex items-center space-x-4">
-          <a href="/Software.html" class="px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 transition">Chapter 2.1</a>
-          <a href="/process activities.html" class="px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 transition">Chapter 2.2</a>
-          <a href="/Coping with change.html" class="px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 transition">Chapter 2.3</a>
-          <a href="/UnfiedProcess.html" class="px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-500 transition">Chapter 2.4</a>
-        </div>
-
-        <!-- Mobile Button -->
-        <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md hover:bg-blue-500 transition">
-          <div class="space-y-1">
-            <span class="block h-0.5 w-6 bg-white"></span>
-            <span class="block h-0.5 w-6 bg-white"></span>
-            <span class="block h-0.5 w-6 bg-white"></span>
-          </div>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="lg:hidden hidden mt-2">
-        <div class="space-y-2 bg-blue-800/90 rounded-lg p-4">
-          <a href="/Software.html" class="block px-3 py-2 rounded-md hover:bg-blue-500">Chapter 2.1</a>
-          <a href="/process activities.html" class="block px-3 py-2 rounded-md hover:bg-blue-500">Chapter 2.2</a>
-          <a href="/Coping with change.html" class="block px-3 py-2 rounded-md hover:bg-blue-500">Chapter 2.3</a>
-          <a href="/UnfiedProcess.html" class="block px-3 py-2 rounded-md hover:bg-blue-500">Chapter 2.4</a>
+        <div class="min-w-0">
+          <h1
+            class="font-bold text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl truncate"
+          >
+            <a href="/index.html">Software Processes</a>
+          </h1>
         </div>
       </div>
-    </nav>
-  </header>
+
+      <!-- Responsive Navigation -->
+      <ul class="flex space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-6">
+        <li>
+          <a
+            href="/Software.html"
+            class="px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-sm sm:text-base font-medium text-white hover:bg-blue-600 transition-all duration-200"
+          >
+            <span class="hidden sm:inline">Chapter 2.1</span>
+            <span class="sm:hidden">2.1</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/process activities.html"
+            class="px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-sm sm:text-base font-medium text-white hover:bg-blue-600 transition-all duration-200"
+          >
+            <span class="hidden sm:inline">Chapter 2.2</span>
+            <span class="sm:hidden">2.2</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Coping with change.html"
+            class="px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-sm sm:text-base font-medium text-white hover:bg-blue-600 transition-all duration-200"
+          >
+            <span class="hidden sm:inline">Chapter 2.3</span>
+            <span class="sm:hidden">2.3</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/UnfiedProcess.html"
+            class="px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-sm sm:text-base font-medium text-white hover:bg-blue-600 transition-all duration-200"
+          >
+            <span class="hidden sm:inline">Chapter 2.4</span>
+            <span class="sm:hidden">2.4</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <!-- Main -->
   <main class="container mx-auto px-6 sm:px-12 lg:px-24 pt-28 pb-20 leading-relaxed space-y-16">
