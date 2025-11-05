@@ -6,7 +6,7 @@
     <title>Coping with change</title>
     <link href="src/output.css" rel="stylesheet" />
   </head>
-  <body class="min-h-screen bg-white">
+  <body class="min-h-screen bg-white font-playwrite text-3xl">
     <!-- Header / Navbar -->
     <header
   class="bg-blue-800 text-white shadow-xl fixed w-full top-0 z-50 backdrop-blur-sm transition-all duration-500"
@@ -94,7 +94,7 @@
         <article
           class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 mb-8 border border-blue-200"
         >
-          <p class="text-blue-800 leading-relaxed mb-6 font-bold text-2xl">
+          <p class="text-blue-800 leading-relaxed mb-6 font-bold sub-title">
             Change is inevitable in all large software projects.
           </p>
           <p class="text-gray-800 leading-relaxed mb-6">
@@ -105,13 +105,16 @@
             used, it is essential that it can accommodate changes to the
             software being developed.
           </p>
-        </article>
-
-        <img
+          <img
           src="src/assets/images/Figure 2.8.png"
           alt="Diagram showing system evolution"
           class="Cope_img"
+          
         />
+        <p class="text-center  mt-5"><strong> Figure 2.8 </strong>Diagram showing system evolution</p>
+        </article>
+
+        
 
         <article class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 mb-8 border border-blue-200">
           <p class="text-gray-800 leading-relaxed mb-6">
@@ -125,7 +128,7 @@
             and re-test the system.
           </p>
 
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="text-subtitle font-semibold text-blue-800 mb-4">
             There are two related approaches that may be used to reduce the
             costs of rework:
           </h4>
@@ -148,7 +151,7 @@
             </li>
           </ul>
 
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="mt-10 font-semibold text-blue-800 mb-4 sub-title">
             In this section, I discuss two ways of coping with change and
             changing system requirements. These are:
           </h4>
@@ -162,7 +165,7 @@
               requirements change proposals made after delivery is therefore
               likely to be reduced.
             </li>
-            <li class="text-gray-800">
+            <li class="text-gray-800 ">
               Incremental delivery, where system increments are delivered to the
               customer for comment and experimentation. This supports both
               change avoidance and change tolerance. It avoids the premature
@@ -206,17 +209,17 @@
 
         <article  class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 mb-8 border border-blue-200 " >
           
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="sub-title font-semibold text-blue-800 mb-4">
             A software prototype can be used in a software development process
             to help anticipate changes that may be required:
           </h4>
 
           <ul class="list-disc ml-6 space-y-2">
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-5">
               In the requirements engineering process, a prototype can help with
               the elicitation and validation of system requirements.
             </li>
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-5">
               In the system design process, a prototype can be used to explore
               particular software solutions and to support user interface
               design.
@@ -245,29 +248,29 @@
             end-user involvement is the only sensible way to develop graphical
             user interfaces for software systems.
           </p>
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="sub-title font-semibold text-blue-800 mb-4">
             Developers are sometimes pressured by managers to deliver throwaway
             prototypes, particularly when there are delays in delivering the
             final version of the software. However, this is usually unwise:
           </h4>
-          <ul class="list-disc ml-6 space-y-2">
-            <li class="text-gray-800">
+          <ul class="list-disc ml-6 space-y-2 pb-3">
+            <li class="text-gray-800 pb-3">
               It may be impossible to tune the prototype to meet non-functional
               requirements, such as performance, security, robustness, and
               reliability requirements, which were ignored during prototype
               development.
             </li>
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-3">
               Rapid change during development inevitably means that the
               prototype is undocumented. The only design specification is the
               prototype code. This is not good enough for long-term maintenance.
             </li>
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-3">
               The changes made during prototype development will probably have
               degraded the system structure. The system will be difficult and
               expensive to maintain.
             </li>
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-3">
               Organizational quality standards are normally relaxed for
               prototype development
             </li>
@@ -293,7 +296,7 @@
             alt="Diagram of incremental delivery"
             class="Cope_img"
           />
-          <p class="text-sm text-gray-800 mt-2">
+          <p class="text-sm text-gray-800 mt-2 text-center">
             <strong>Figure 2.10</strong> Incremental delivery
           </p>
 
@@ -313,7 +316,7 @@
             highest-priority services implemented and delivered first.
           </p>
 
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="sub-title font-semibold text-blue-800 mb-4">
             Incremental delivery has a number of advantages:
           </h4>
           <ol class="list-decimal list-inside space-y-3 text-gray-800">
@@ -323,18 +326,18 @@
               increments. Unlike prototypes, these are part of the real system
               so there is no re-learning when the complete system is available.
             </li>
-            <li>
+            <li class="pb-3">
               Customers do not have to wait until the entire system is delivered
               before they can gain value from it. The first increment satisfies
               their most critical requirements so they can use the software
               immediately.
             </li>
-            <li>
+            <li class="pb-3">
               The process maintains the benefits of incremental development in
               that it should be relatively easy to incorporate changes into the
               system.
             </li>
-            <li>
+            <li class="pb-3">
               As the highest-priority services are delivered first and
               increments then integrated, the most important system services
               receive the most testing. This means that customers are less
@@ -343,17 +346,17 @@
             </li>
           </ol>
 
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="sub-title font-semibold text-blue-800 mb-4">
             However, there are problems with incremental delivery:
           </h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-3">
               Most systems require a set of basic facilities that are used by
               different parts of the system. As requirements are not defined in
               detail until an increment is to be implemented, it can be hard to
               identify common facilities that are needed by all increments.
             </li>
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-3 ">
               Iterative development can also be difficult when a replacement
               system is being developed. Users want all of the functionality of
               the old system and are often unwilling to experiment with an
@@ -388,7 +391,7 @@
             alt="Boehm's spiral model diagram"
             class="Cope_img"
           />
-          <p class="text-sm text-gray-800 mt-2">
+          <p class="text-sm text-gray-800 mt-2 text-center">
             <strong>Figure 2.11</strong> Boehm’s spiral model of the software
             process (©IEEE 1988)
           </p>
@@ -410,25 +413,25 @@
             reduce these risks.
           </p>
 
-          <h4 class="text-xl font-semibold text-blue-800 mb-4">
+          <h4 class="sub-title font-semibold text-blue-800 mb-4">
             Each loop in the spiral is split into four sectors:
           </h4>
           <ul class="list-disc ml-6 space-y-2">
-            <li class="text-gray-800">
+            <li class="text-gray-800 pb-3">
               <strong>Objective setting</strong> Specific objectives for that
               phase of the project are defined. Constraints on the process and
               the product are identified and a detailed management plan is drawn
               up. Project risks are identified. Alternative strategies,
               depending on these risks,
             </li>
-            <li>
+            <li class="pb-3">
               <strong>Risk assessment and reduction</strong> For each of the identified project
               risks, a detailed analysis is carried out. Steps are taken to
               reduce the risk. For example, if there is a risk that the
               requirements are inappropriate, a prototype system may be
               developed.
             </li>
-            <li>
+            <li class="pb-3">
               <strong>Development and validation</strong> After risk evaluation, a development
               model for the system is chosen. For example, throwaway prototyping
               may be the best development approach if user interface risks are
@@ -438,7 +441,7 @@
               integration, the waterfall model may be the best development model
               to use.
             </li>
-            <li>
+            <li class="pb-5">
               <strong>Planning</strong> The project is reviewed and a decision made whether to
               continue with a further loop of the spiral. If it is decided to
               continue, plans are drawn up for the next phase of the project.
@@ -530,7 +533,7 @@
       </div>
     </footer>
 
-    <!-- Script for mobile toggle -->
+    
 
   </body>
 </html>

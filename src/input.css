@@ -41,7 +41,7 @@
 }
 
 .background-color {
-  @apply bg-white;
+  @apply bg-blue-50;
 }
 .p-card{
   @apply sm:text-xl md:text:xl xl:text-xl leading-snug
