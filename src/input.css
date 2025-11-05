@@ -5,18 +5,24 @@
   src: url(./assets/fonts/LibertinusSerifDisplay-Regular.ttf);
 }
 @font-face {
-  font-family: "playwrite";
-  src: url(./assets/fonts/PlaywriteES-Regular.ttf);
+  font-family: "noto";
+  src: url(./assets/fonts/NotoSerif_Condensed-Regular.ttf);
 }
 
 
 @theme{
   --font-libertinus: 'Libertinus';
-  --font-playwrite: 'playwrite';
+  --font-playwrite: 'noto';
 }
 
+.sub-title{
+  @apply font-libertinus text-5xl
+}
 .libertinus{
-  font-family: var(--font-playwrite);
+  font-family: var(--font-noto);
+}
+.noto{
+  font-family: var(--font-libertinus);
 }
 .primary-color {
   @apply bg-blue-800;
@@ -37,8 +43,12 @@
 .background-color {
   @apply bg-white;
 }
-
-
+.p-card{
+  @apply sm:text-xl md:text:xl xl:text-xl leading-snug
+}
+.h4-card{
+  @apply font-semibold text-blue-800 italic text-base sm:text-xl lg:text-3xl text-center px-2 sm:px-4 transition-all duration-[700ms] ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:translate-y-8/12 group-hover:absolute group-hover:bottom-1/4
+}
 .tr{
   @apply bg-white dark:bg-white border border-blue-200
 }
